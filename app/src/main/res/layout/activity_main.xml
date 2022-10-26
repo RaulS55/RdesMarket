@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="133dp"
+        android:layout_height="93dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="123dp"
+        android:layout_marginLeft="123dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/logo" />
+
+    <Button
+        android:id="@+id/bt_carrito"
+        android:layout_width="257dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="61dp"
+        android:layout_marginLeft="61dp"
+        android:layout_marginTop="23dp"
+        android:background="@drawable/bt_carrito_azul"
+        android:onClick="cambiarCarrito"
+         />
+
+    <Button
+        android:id="@+id/bt_ofertas"
+        android:layout_width="257dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/bt_buscar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginLeft="62dp"
+        android:layout_marginTop="10dp"
+        android:onClick="cambiarOfertas"
+        android:background="@drawable/bt_oferta_azul" />
+
+    <Button
+        android:id="@+id/bt_escanear"
+        android:layout_width="257dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/bt_ofertas"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginTop="14dp"
+        android:onClick="cambiarEscanear"
+        android:background="@drawable/bt_escaner_azul" />
+
+    <Button
+        android:id="@+id/bt_buscar"
+        android:layout_width="257dp"
+        android:layout_height="70dp"
+        android:layout_below="@+id/bt_carrito"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="10dp"
+        android:onClick="cambiarBuscar"
+        android:background="@drawable/bt_lupa_azul" />
+
+</RelativeLayout>
